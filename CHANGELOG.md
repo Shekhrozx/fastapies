@@ -8,6 +8,6 @@ All notable changes to the "fastapies" extension will be documented in this file
 - Initial release
 
 
-## [v0.0.2]
+## [0.0.2]
 
 - Bugs fixed
