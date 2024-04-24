@@ -87,9 +87,6 @@
   "Custom Error Handler": {
       "prefix": "feserror",
       "body": [
-          "from fastapi import Request",
-          "from fastapi.responses import JSONResponse",
-          "",
           "class ${1:CustomException}(Exception):",
           "    def __init__(self):",
           "        pass$0",

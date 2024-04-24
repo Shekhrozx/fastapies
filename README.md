@@ -31,7 +31,8 @@
 
 ## Usage
 
-Initiate FastAPI app
+### Initiate FastAPI app (*`fes + init`*):
+
 ```python
 # fesinit :
 from fastapi import FastAPI
@@ -42,7 +43,8 @@ async def index():
     return {"message": "Hello FES APP"}
 ```
 
-async GET path
+### `async`  [METHOD] path (*`fes + a + [method]`*):
+> methods: `GET`, `POST`, `PUT`, `DEL`
 ```python
 # fesaget :
 @app.get('/path_name')
@@ -50,7 +52,8 @@ async def method_name(args):
     pass
 ```
 
-GET path
+### `sync` [METHOD] path (*`fes + [method]`*):
+> methods: `GET`, `POST`, `PUT`, `DEL`
 ```python
 # fesget :
 @app.get('/path_name')
@@ -58,16 +61,29 @@ def method_name(args):
     pass
 ```
 
-Pydantic BaseModel
+### Pydantic BaseModel (*`fes + basemodel`*):
 ```python
 # fesbasemodel :
 class ModelName(BaseModel):
     field_name: str
 ```
 
+### Custom Error Handling (*`fes + error`*):
+```python
+# feserror :
+class CustomException(Exception):
+    def __init__(self):
+        pass
+
+@app.exception_handler(CustomException)
+async def custom_exception_handler(request: Request, exc: CustomException):
+    return JSONResponse(
+        status_code=status_code,
+        content={'message': 'message'}
+    )
+```
+
 ...
-
-
 
 
 ## Contributing
