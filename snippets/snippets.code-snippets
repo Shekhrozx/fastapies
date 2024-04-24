@@ -80,8 +80,6 @@
   "Pydantic BaseModel": {
       "prefix": "fesbasemodel",
       "body": [
-          "from pydantic import BaseModel",
-          "",
           "class ${1:ModelName}(BaseModel):",
           "    ${2:field_name}: ${3:str} = ${4:None}"
       ]

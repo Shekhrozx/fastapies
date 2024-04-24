@@ -1,0 +1,5 @@
+# Create a extension package
+vsce package
+
+# Publish the extension
+vsce publish
