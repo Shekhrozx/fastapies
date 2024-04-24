@@ -30,7 +30,7 @@
 
 
 ## Contributing
-Feel free to [submit a pull request on github]()
+Feel free to [submit a pull request on github](https://github.com/Shekhrozx/fastapies)
 
 
 ## Release Notes
