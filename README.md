@@ -29,6 +29,47 @@
 | `fesshdn`        | Shutdown Event             |
 
 
+## Usage
+
+Initiate FastAPI app
+```python
+# fesinit :
+from fastapi import FastAPI
+app = FastAPI()
+
+@app.get("/")
+async def index():
+    return {"message": "Hello FES APP"}
+```
+
+async GET path
+```python
+# fesaget :
+@app.get('/path_name')
+async def method_name(args):
+    pass
+```
+
+GET path
+```python
+# fesget :
+@app.get('/path_name')
+def method_name(args):
+    pass
+```
+
+Pydantic BaseModel
+```python
+# fesbasemodel :
+class ModelName(BaseModel):
+    field_name: str
+```
+
+...
+
+
+
+
 ## Contributing
 Feel free to [submit a pull request on github](https://github.com/Shekhrozx/fastapies)
 
