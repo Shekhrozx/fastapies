@@ -1,0 +1,31 @@
+{
+  "name": "fastapi-easy-snippets",
+  "displayName": "fastapiES",
+  "description": "FastAPI Easy Snippets for VSCode",
+  "publisher": "Shekhrozx",
+  "icon":"images/logo.png",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.88.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "keywords": [
+    "fastapi",
+    "python",
+    "snippets"
+  ],
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "contributes": {
+    "snippets": [
+      {
+        "language": "python",
+        "path": "./snippets/snippets.code-snippets"
+      }
+    ]
+  }
+}

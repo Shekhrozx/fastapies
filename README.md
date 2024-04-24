@@ -19,7 +19,7 @@
 | `fesget`         | GET path                   |
 | `fespost`        | POST path                  |
 | `fesput`         | PUT path                   |
-| `delpath`        | DELETE path                |
+| `fesdel`         | DELETE path                |
 |                  |                            |
 | `fesbasemodel`   | Pydantic BaseModel         |
 | `feserror`       | Custom Error Handling      |
