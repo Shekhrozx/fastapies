@@ -14,7 +14,7 @@
   "FastAPI GET path": {
       "prefix": "fesget",
       "body": [
-          "@app.get('/${1:path_name}')",
+          "@app.get('/${1:path_name}/')",
           "def ${2:method_name}(${3:args}):",
           "    pass$0"
       ]
@@ -22,7 +22,7 @@
   "async FastAPI GET path": {
       "prefix": "fesaget",
       "body": [
-          "@app.get('/${1:path_name}')",
+          "@app.get('/${1:path_name}/')",
           "async def ${2:method_name}(${3:args}):",
           "    pass$0"
       ]
@@ -30,7 +30,7 @@
   "FastAPI POST path": {
       "prefix": "fespost",
       "body": [
-          "@app.post('/${1:path_name}')",
+          "@app.post('/${1:path_name}/')",
           "def ${2:method_name}(${3:args}):",
           "    pass$0"
       ]
@@ -38,7 +38,7 @@
   "async FastAPI POST path": {
       "prefix": "fesapost",
       "body": [
-          "@app.post('/${1:path_name}')",
+          "@app.post('/${1:path_name}/')",
           "async def ${2:method_name}(${3:args}):",
           "    pass$0"
       ]
@@ -47,7 +47,7 @@
   "FastAPI PUT path": {
     "prefix": "fesput",
     "body": [
-        "@app.put('/${1:path_name}')",
+        "@app.put('/${1:path_name}/')",
         "def ${2:method_name}(${3:args}):",
         "    pass$0"
     ]
@@ -55,7 +55,7 @@
   "async FastAPI PUT path": {
       "prefix": "fesaput",
       "body": [
-          "@app.put('/${1:path_name}')",
+          "@app.put('/${1:path_name}/')",
           "async def ${2:method_name}(${3:args}):",
           "    pass$0"
       ]
@@ -64,7 +64,7 @@
   "FastAPI DELETE path": {
     "prefix": "fesdel",
     "body": [
-        "@app.delete('/${1:path_name}')",
+        "@app.delete('/${1:path_name}/')",
         "def ${2:method_name}(${3:args}):",
         "    pass$0"
     ]
@@ -72,10 +72,17 @@
   "async FastAPI DELETE path": {
     "prefix": "fesadel",
     "body": [
-        "@app.delete('/${1:path_name}')",
+        "@app.delete('/${1:path_name}/')",
         "async def ${2:method_name}(${3:args}):",
         "    pass$0"
     ]
+  },
+  "async function": {
+      "prefix": "fesadef",
+      "body": [
+          "async def ${1:method_name}(${2:args}):",
+          "    pass$0"
+      ]
   },
   "Pydantic BaseModel": {
       "prefix": "fesbasemodel",

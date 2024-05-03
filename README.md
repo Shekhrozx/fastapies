@@ -21,6 +21,7 @@
 | `fesput`         | PUT path                   |
 | `fesdel`         | DELETE path                |
 |                  |                            |
+| `fesadef`        | async function             |
 | `fesbasemodel`   | Pydantic BaseModel         |
 | `feserror`       | Custom Error Handling      |
 | `fessqldb`       | SQLAlchemy Database        |
